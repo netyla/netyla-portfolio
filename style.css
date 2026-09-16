@@ -114,20 +114,6 @@ nav a:hover{
   overflow:hidden
 }
 
-/* Petit détail graphique très discret */
-.hero::after{
-  content:"N";
-  position:absolute;
-  right:4vw;
-  bottom:-80px;
-  font-family:var(--serif);
-  font-size:300px;
-  line-height:1;
-  color:#fdf0f2;
-  z-index:-1;
-  pointer-events:none
-}
-
 .eyebrow{
   font-size:10px;
   letter-spacing:.24em;
@@ -640,13 +626,6 @@ footer strong span{
   .hero{
     min-height:auto;
     padding-top:70px
-  }
-
-  /* Le N décoratif reste très discret sur mobile */
-  .hero::after{
-    font-size:200px;
-    right:-30px;
-    bottom:-50px
   }
 
   .intro{
