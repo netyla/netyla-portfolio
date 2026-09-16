@@ -49,11 +49,13 @@ a{
 
 header{
   height:82px;
+
   position:sticky;
   top:0;
   z-index:100;
 
   background:rgba(255,255,255,.94);
+
   backdrop-filter:blur(10px);
 
   border-bottom:1px solid #eee;
@@ -85,7 +87,9 @@ nav{
   gap:32px;
 
   font-size:11px;
+
   text-transform:uppercase;
+
   letter-spacing:.12em;
 }
 
@@ -107,6 +111,7 @@ nav a:hover{
   border:0;
 
   font-size:22px;
+
   color:var(--black);
 
   cursor:pointer;
@@ -119,28 +124,30 @@ nav a:hover{
 
 .hero{
   max-width:var(--max);
+
   margin:auto;
 
   min-height:calc(100vh - 82px);
 
   padding:90px 5vw;
 
-  display:grid;
-  grid-template-columns:1.4fr .6fr;
-
+  display:flex;
   align-items:center;
-  gap:60px;
+}
 
-  position:relative;
-  overflow:hidden;
+
+.hero-content{
+  max-width:850px;
 }
 
 
 .eyebrow{
   font-size:10px;
+
   letter-spacing:.24em;
 
   color:var(--pink);
+
   font-weight:500;
 
   margin-bottom:18px;
@@ -151,13 +158,16 @@ h1,
 h2,
 h3{
   font-family:var(--serif);
+
   font-weight:500;
+
   line-height:1.02;
 }
 
 
 h1{
   font-size:clamp(55px,8vw,105px);
+
   letter-spacing:-.04em;
 }
 
@@ -165,6 +175,7 @@ h1{
 h1 em,
 h2 em{
   font-style:normal;
+
   color:var(--pink);
 }
 
@@ -180,21 +191,26 @@ h2 em{
 
 .actions{
   display:flex;
+
   gap:26px;
 
   align-items:center;
+
   flex-wrap:wrap;
 }
 
 
 .btn{
   background:var(--black);
+
   color:#fff;
 
   padding:14px 21px;
 
   font-size:10px;
+
   text-transform:uppercase;
+
   letter-spacing:.12em;
 
   transition:
@@ -205,6 +221,7 @@ h2 em{
 
 .btn:hover{
   background:var(--pink);
+
   transform:translateY(-2px);
 }
 
@@ -235,6 +252,7 @@ h2 em{
   border-block:1px solid var(--soft);
 
   display:grid;
+
   grid-template-columns:repeat(3,1fr);
 
   padding:28px 5vw;
@@ -243,17 +261,12 @@ h2 em{
 
 .intro div{
   max-width:300px;
+
   margin:auto;
 
   display:grid;
+
   grid-template-columns:40px 1fr;
-
-  transition:transform .25s ease;
-}
-
-
-.intro div:hover{
-  transform:translateY(-2px);
 }
 
 
@@ -270,6 +283,7 @@ h2 em{
   font-size:11px;
 
   text-transform:uppercase;
+
   letter-spacing:.13em;
 }
 
@@ -329,347 +343,36 @@ h2 em{
 
 
 /* =========================
-   ZONE ORDINATEUR
+   IMAGE SATHO
 ========================= */
 
-.project-mock{
+.project-image{
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  padding:45px;
+
   min-width:0;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  padding:70px 45px;
 }
 
 
-/* =========================
-   ORDINATEUR PORTABLE
-========================= */
-
-.laptop{
-  width:100%;
-  max-width:650px;
-
-  position:relative;
-
-  filter:
-    drop-shadow(0 28px 25px rgba(0,0,0,.16))
-    drop-shadow(0 8px 8px rgba(0,0,0,.08));
-}
-
-
-/* =========================
-   ÉCRAN
-========================= */
-
-.laptop-screen{
-  position:relative;
-
-  width:88%;
-
-  margin:0 auto;
-
-  padding:8px 8px 7px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #555 0%,
-      #202020 20%,
-      #111 100%
-    );
-
-  border-radius:17px 17px 7px 7px;
-
-  box-shadow:
-    inset 0 1px 1px rgba(255,255,255,.18),
-    inset 0 -1px 2px rgba(0,0,0,.7);
-}
-
-
-/* Bordure noire autour de l'écran */
-
-.screen-bezel{
-  position:relative;
-
-  background:#090909;
-
-  border-radius:10px;
-
-  padding:7px;
-
-  overflow:hidden;
-}
-
-
-/* Écran réel */
-
-.screen-display{
-  width:100%;
-
-  aspect-ratio:16 / 10;
-
-  background:#fff;
-
-  border-radius:5px;
-
-  overflow:hidden;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-
-/*
-   IMPORTANT :
-   contain permet de conserver TOUTE la capture
-   de Satho-entretien sans la couper.
-*/
-
-.satho-preview{
+.project-image img{
   display:block;
 
   width:100%;
-  height:100%;
+
+  max-width:720px;
+
+  height:auto;
 
   object-fit:contain;
-  object-position:center;
-
-  background:#fff;
-}
-
-
-/* =========================
-   WEBCAM
-========================= */
-
-.camera{
-  position:absolute;
-
-  z-index:5;
-
-  top:2px;
-  left:50%;
-
-  transform:translateX(-50%);
-
-  width:34px;
-  height:5px;
-
-  background:#050505;
-
-  border-radius:0 0 5px 5px;
-}
-
-
-/* =========================
-   CHARNIÈRE
-========================= */
-
-.laptop-hinge{
-  width:88%;
-  height:8px;
-
-  margin:0 auto;
-
-  position:relative;
-  z-index:3;
-
-  background:
-    linear-gradient(
-      to bottom,
-      #777,
-      #333 45%,
-      #111
-    );
-
-  border-radius:0 0 5px 5px;
-}
-
-
-/* =========================
-   BASE DE L'ORDINATEUR
-========================= */
-
-.laptop-base{
-  width:100%;
-
-  height:105px;
-
-  position:relative;
-
-  margin-top:-1px;
-
-  padding:18px 15% 12px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #f5f5f5 0%,
-      #dedede 45%,
-      #bcbcbc 100%
-    );
-
-  clip-path:polygon(
-    8% 0,
-    92% 0,
-    100% 100%,
-    0 100%
-  );
-
-  border-radius:0 0 18px 18px;
-
-  box-shadow:
-    inset 0 1px 2px rgba(255,255,255,.9),
-    inset 0 -3px 5px rgba(0,0,0,.15);
-}
-
-
-/* =========================
-   CLAVIER
-========================= */
-
-.keyboard{
-  width:78%;
-  margin:0 auto;
-
-  display:flex;
-  flex-direction:column;
-
-  gap:3px;
-}
-
-
-.keyboard-row{
-  display:grid;
-
-  grid-template-columns:repeat(13,1fr);
-
-  gap:3px;
-
-  height:7px;
-}
-
-
-.keyboard-row span{
-  display:block;
-
-  background:
-    linear-gradient(
-      to bottom,
-      #666,
-      #404040
-    );
-
-  border-radius:2px;
-
-  box-shadow:
-    inset 0 1px 1px rgba(255,255,255,.15),
-    0 1px 1px rgba(0,0,0,.12);
-}
-
-
-.keyboard-bottom-row{
-  grid-template-columns:
-    .7fr
-    .7fr
-    .7fr
-    .7fr
-    3fr
-    .7fr
-    .7fr
-    .7fr
-    .7fr;
-}
-
-
-.keyboard-bottom-row .space-key{
-  background:
-    linear-gradient(
-      to bottom,
-      #5f5f5f,
-      #3c3c3c
-    );
-}
-
-
-/* =========================
-   TRACKPAD
-========================= */
-
-.trackpad{
-  position:absolute;
-
-  left:50%;
-  bottom:8px;
-
-  transform:translateX(-50%);
-
-  width:24%;
-  height:26px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #d8d8d8,
-      #c2c2c2
-    );
-
-  border:1px solid #aaa;
 
   border-radius:4px;
 
   box-shadow:
-    inset 0 1px 2px rgba(255,255,255,.6),
-    0 1px 2px rgba(0,0,0,.08);
-}
-
-
-/* =========================
-   BORD AVANT
-========================= */
-
-.laptop-front{
-  width:100%;
-  height:7px;
-
-  position:relative;
-  z-index:5;
-
-  margin-top:-1px;
-
-  background:
-    linear-gradient(
-      to bottom,
-      #d7d7d7,
-      #aaa
-    );
-
-  border-radius:0 0 20px 20px;
-}
-
-
-/* Petit reflet réaliste sur l'écran */
-
-.screen-bezel::after{
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  pointer-events:none;
-
-  background:
-    linear-gradient(
-      120deg,
-      rgba(255,255,255,.08),
-      transparent 35%
-    );
-
-  border-radius:10px;
+    0 25px 45px rgba(63,63,63,.14);
 }
 
 
@@ -681,6 +384,7 @@ h2 em{
   padding:65px 50px;
 
   display:flex;
+
   flex-direction:column;
 
   justify-content:center;
@@ -740,6 +444,7 @@ h2 em{
 .tags span:hover,
 .values span:hover{
   border-color:var(--pink);
+
   color:var(--pink);
 }
 
@@ -779,6 +484,7 @@ h2 em{
 
 .project-note-line{
   width:100px;
+
   height:1px;
 
   background:var(--soft);
@@ -837,13 +543,6 @@ h2 em{
 
 .service-list span{
   color:var(--pink);
-
-  transition:transform .25s ease;
-}
-
-
-.service-list > div:hover span{
-  transform:translateX(4px);
 }
 
 
@@ -930,11 +629,6 @@ h2 em{
 }
 
 
-.values span{
-  border-color:var(--soft);
-}
-
-
 /* =========================
    PROCESSUS
 ========================= */
@@ -1000,25 +694,6 @@ h2 em{
 }
 
 
-.contact::before{
-  content:"";
-
-  position:absolute;
-
-  width:180px;
-  height:180px;
-
-  border:1px solid #ffffff18;
-
-  border-radius:50%;
-
-  left:-90px;
-  top:50%;
-
-  transform:translateY(-50%);
-}
-
-
 .contact h2{
   font-size:clamp(60px,8vw,105px);
 }
@@ -1041,8 +716,6 @@ h2 em{
   color:var(--soft);
 
   border-bottom:1px solid var(--pink);
-
-  transition:color .25s ease;
 }
 
 
@@ -1113,6 +786,7 @@ footer strong span{
     position:absolute;
 
     top:70px;
+
     left:0;
     right:0;
 
@@ -1133,7 +807,6 @@ footer strong span{
   }
 
 
-  .hero,
   .project,
   .about{
     grid-template-columns:1fr;
@@ -1159,15 +832,8 @@ footer strong span{
   }
 
 
-  /* ORDINATEUR TABLETTE */
-
-  .project-mock{
-    padding:60px 25px;
-  }
-
-
-  .laptop{
-    max-width:620px;
+  .project-image{
+    padding:35px 25px;
   }
 
 
@@ -1221,78 +887,15 @@ footer strong span{
   }
 
 
-  /* ORDINATEUR MOBILE */
-
-  .project-mock{
-    padding:40px 10px;
+  .project-image{
+    padding:25px 10px;
   }
 
 
-  .laptop{
+  .project-image img{
     width:100%;
-    max-width:500px;
-  }
 
-
-  .laptop-screen{
-    width:90%;
-
-    padding:5px 5px 4px;
-
-    border-radius:11px 11px 5px 5px;
-  }
-
-
-  .screen-bezel{
-    padding:5px;
-
-    border-radius:7px;
-  }
-
-
-  .screen-display{
-    border-radius:4px;
-  }
-
-
-  .camera{
-    width:24px;
-    height:4px;
-  }
-
-
-  .laptop-base{
-    height:72px;
-
-    padding:11px 13% 8px;
-
-    border-radius:0 0 12px 12px;
-  }
-
-
-  .keyboard{
-    gap:2px;
-  }
-
-
-  .keyboard-row{
-    height:5px;
-    gap:2px;
-  }
-
-
-  .trackpad{
-    width:24%;
-    height:17px;
-
-    bottom:5px;
-  }
-
-
-  .laptop-front{
-    height:5px;
-
-    border-radius:0 0 13px 13px;
+    border-radius:3px;
   }
 
 
