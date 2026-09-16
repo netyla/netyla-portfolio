@@ -264,6 +264,14 @@ h2 em{
   min-height:520px
 }
 
+.satho-preview{
+  width:100%;
+  max-width:650px;
+  height:auto;
+  display:block;
+  box-shadow:0 25px 55px #3f3f3f18;
+}
+
 .browser{
   width:100%;
   max-width:610px;
