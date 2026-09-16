@@ -276,9 +276,8 @@ h2 em{
 .laptop-screen{
   width:100%;
   background:#222;
-  border:10px solid #222;
-  border-radius:14px 14px 5px 5px;
-  overflow:hidden;
+  padding:8px;
+  border-radius:12px 12px 4px 4px;
   box-shadow:0 25px 50px #3f3f3f18;
 }
 
