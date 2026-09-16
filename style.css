@@ -262,16 +262,49 @@ h2 em{
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height:520px
+  min-height:520px;
+}
+
+.laptop{
+  width:100%;
+  max-width:560px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.laptop-screen{
+  width:100%;
+  background:#222;
+  border:10px solid #222;
+  border-radius:14px 14px 5px 5px;
+  overflow:hidden;
+  box-shadow:0 25px 50px #3f3f3f18;
 }
 
 .satho-preview{
   width:100%;
-  max-width:480px;
-  height:420px;
-  object-fit:cover;
-  object-position:top;
+  height:auto;
   display:block;
+}
+
+.laptop-base{
+  width:112%;
+  height:16px;
+  background:#d8d8d8;
+  border-radius:2px 2px 12px 12px;
+  position:relative;
+}
+
+.laptop-base::after{
+  content:"";
+  position:absolute;
+  width:20%;
+  height:5px;
+  background:#bcbcbc;
+  left:40%;
+  bottom:0;
+  border-radius:0 0 5px 5px;
 }
 
 .dots{
@@ -633,9 +666,21 @@ footer strong span{
     padding-block:90px
   }
 
- .project-mock{
-  padding:30px 25px;
+.project-mock{
+  padding:40px 25px;
   min-height:auto;
+}
+
+.laptop{
+  max-width:500px;
+}
+
+.laptop-screen{
+  border-width:7px;
+}
+
+.laptop-base{
+  width:108%;
 }
 
 .satho-preview{
