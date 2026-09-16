@@ -1,87 +1,596 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="NETYLÂ — Digital & Web">
-<title>NETYLÂ — Digital & Web</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NETYLÂ — Digital & Web</title>
+
+  <meta
+    name="description"
+    content="NETYLÂ accompagne les entrepreneurs et les petites structures dans la création de leur présence en ligne."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-<a class="brand" href="#accueil" aria-label="NETYLÂ"><span class="brand-black">NET</span><span class="brand-pink">YLÂ</span></a>
-<button class="menu" aria-label="Menu">☰</button>
-<nav>
-<a href="#accueil">Accueil</a><a href="#realisations">Réalisations</a><a href="#services">Services</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
-</nav>
-</header>
 
-<main>
-  
-<section id="accueil" class="hero">
-<div>
-<section id="apropos" class="about">
-<div>
-<p class="eyebrow">L'ESSENCE DE NETYLÂ</p>
-</div>
-<div>
-<h2>Une présence en ligne<br><em>qui vous ressemble.</em></h2>
-<p>NETYLÂ accompagne les entrepreneurs et les petites structures dans la création de leur présence en ligne, avec des solutions web sur-mesure, élégantes et modernes.</p>
-<p>L'objectif : créer un site qui ne soit pas seulement joli, mais compréhensible, accessible et réellement utile à votre activité.</p>
-<div class="values">
-<span>Élégant</span>
-<span>Créatif</span>
-<span>Moderne</span>
-<span>Accessible</span>
-<span>Technique & humain</span>
-</div>
-</div>
-  
-</section>
-</section>
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-<section class="intro">
-<div><b>01</b><strong>Création</strong><small>Des sites à votre image</small></div>
-<div><b>02</b><strong>Identité</strong><small>Une image cohérente</small></div>
-<div><b>03</b><strong>Évolution</strong><small>Un accompagnement durable</small></div>
-</section>
+  <header>
 
-<section id="realisations" class="section">
-<div class="heading"><p class="eyebrow">MES RÉALISATIONS</p><h2>Des projets conçus<br><em>avec intention.</em></h2><p>Chaque projet est pensé pour être beau, clair et surtout utile à l'activité qu'il représente.</p></div>
-<article class="project">
-<div class="project-mock">
-<div class="browser"><div class="dots">● ● ●</div><div class="mock-nav">SATHO-ENTRETIEN</div><div class="mock-body"><small>ENTRETIEN & SERVICES</small><h3>Un site clair pour<br>une activité locale.</h3><i></i></div></div>
-</div>
-<div class="project-text"><small>PROJET 01</small><h3>Satho-entretien</h3><p>Création d'un site vitrine pour présenter les services, les réalisations, les avis et un espace de ventes administrable.</p><div class="tags"><span>Responsive</span><span>HTML / CSS</span><span>JavaScript</span><span>Supabase</span></div><a class="link" href="https://netyla.github.io/Satho-entretien/" target="_blank" rel="noopener">Voir le site ↗</a></div>
-</article>
-</section>
+    <a class="brand" href="#accueil" aria-label="NETYLÂ">
+      <span class="brand-black">NET</span><span class="brand-pink">YLÂ</span>
+    </a>
 
-<section id="services" class="section services">
-<div class="heading"><p class="eyebrow">CE QUE JE PROPOSE</p><h2>Créer. Structurer.<br><em>Faire évoluer.</em></h2></div>
-<div class="service-list">
-<div><b>01</b><h3>Création de site web</h3><p>One Page, site vitrine ou projet sur-mesure, avec une attention particulière au mobile.</p><span>↗</span></div>
-<div><b>02</b><h3>Refonte de site</h3><p>Moderniser un site existant, améliorer sa navigation et son image.</p><span>↗</span></div>
-<div><b>03</b><h3>Logo & identité visuelle</h3><p>Créer une identité cohérente, reconnaissable et adaptée à votre univers.</p><span>↗</span></div>
-<div><b>04</b><h3>Maintenance & évolution</h3><p>Garder votre site à jour et vous accompagner dans ses évolutions.</p><span>↗</span></div>
-</div>
-<div class="price"><span>À partir de</span><strong>299 €</strong><small>Tarifs adaptés au projet et précisés dans un devis personnalisé.</small></div>
-</section>
+    <button class="menu" aria-label="Ouvrir le menu">
+      ☰
+    </button>
 
-<div><p class="eyebrow">L'ESSENCE DE NETYLÂ</p></div>
-<div><h2>Une présence en ligne<br><em>qui vous ressemble.</em></h2><p>NETYLÂ accompagne les entrepreneurs et les petites structures dans la création de leur présence en ligne, avec des solutions web sur-mesure, élégantes et modernes.</p><p>L'objectif : créer un site qui ne soit pas seulement joli, mais compréhensible, accessible et réellement utile à votre activité.</p><div class="values"><span>Élégant</span><span>Créatif</span><span>Moderne</span><span>Accessible</span><span>Technique & humain</span></div></div>
-</section>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<section class="section process">
-<div class="heading"><p class="eyebrow">COMMENT ÇA SE PASSE ?</p><h2>Du premier échange<br><em>à la mise en ligne.</em></h2></div>
-<div class="steps"><div><b>01</b><h3>Échanger</h3><p>Comprendre votre activité, vos besoins et votre image.</p></div><div><b>02</b><h3>Concevoir</h3><p>Construire une direction visuelle et une structure adaptées.</p></div><div><b>03</b><h3>Développer</h3><p>Donner vie au projet avec un site responsive et fonctionnel.</p></div><div><b>04</b><h3>Lancer</h3><p>Finaliser, tester et mettre votre présence en ligne.</p></div></div>
-</section>
+  </header>
 
-<section id="contact" class="contact"><p class="eyebrow">UN PROJET EN TÊTE ?</p><h2>Parlons de<br><em>votre projet.</em></h2><p>Vous avez une idée, un site à créer ou une présence en ligne à faire évoluer ? Écrivez-moi pour en discuter.</p><a href="mailto:netyla.digitalweb@gmail.com">netyla.digitalweb@gmail.com</a></section>
-</main>
-<footer><strong>NETYLÂ <span>· DIGITAL & WEB</span></strong><small>© <span id="year"></span> NETYLÂ — Tous droits réservés.</small></footer>
-<script src="script.js"></script>
+
+  <main>
+
+    <!-- =========================
+         ACCUEIL
+    ========================== -->
+
+    <section id="accueil" class="hero">
+
+      <div>
+
+        <p class="eyebrow">DIGITAL & WEB</p>
+
+        <h1>
+          Créons ensemble<br>
+          <em>votre présence en ligne.</em>
+        </h1>
+
+        <p class="lead">
+          Des sites web pensés pour mettre votre activité en valeur :
+          élégants, modernes, responsive et adaptés à votre univers.
+        </p>
+
+        <div class="actions">
+
+          <a class="btn" href="#realisations">
+            Découvrir mes réalisations
+          </a>
+
+          <a class="link" href="#contact">
+            Parlons de votre projet →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="intro">
+
+      <div>
+        <b>01</b>
+
+        <strong>Création</strong>
+
+        <small>
+          Des sites à votre image
+        </small>
+      </div>
+
+
+      <div>
+        <b>02</b>
+
+        <strong>Identité</strong>
+
+        <small>
+          Une image cohérente
+        </small>
+      </div>
+
+
+      <div>
+        <b>03</b>
+
+        <strong>Évolution</strong>
+
+        <small>
+          Un accompagnement durable
+        </small>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         RÉALISATIONS
+    ========================== -->
+
+    <section id="realisations" class="section">
+
+      <div class="heading">
+
+        <p class="eyebrow">
+          MES RÉALISATIONS
+        </p>
+
+        <h2>
+          Des projets conçus<br>
+          <em>avec intention.</em>
+        </h2>
+
+        <p>
+          Chaque projet est pensé pour être beau, clair et surtout utile
+          à l'activité qu'il représente.
+        </p>
+
+      </div>
+
+
+      <div class="project">
+
+        <div class="project-mock">
+
+          <div class="browser">
+
+            <div class="dots">
+              ● ● ●
+            </div>
+
+            <div class="mock-nav">
+              SATHO-ENTRETIEN
+            </div>
+
+            <div class="mock-body">
+
+              <small>
+                ENTRETIEN & SERVICES
+              </small>
+
+              <h3>
+                Un site clair pour
+                une activité locale.
+              </h3>
+
+              <i></i>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-text">
+
+          <small>
+            PROJET 01
+          </small>
+
+          <h3>
+            Satho-entretien
+          </h3>
+
+          <p>
+            Création d'un site vitrine pour présenter les services,
+            les réalisations, les avis et un espace de ventes
+            administrable.
+          </p>
+
+
+          <div class="tags">
+
+            <span>Responsive</span>
+            <span>HTML / CSS</span>
+            <span>JavaScript</span>
+            <span>Supabase</span>
+
+          </div>
+
+
+          <a
+            class="link"
+            href="https://netyla.github.io/Satho-entretien/"
+            target="_blank"
+            rel="noopener"
+          >
+            Voir le site ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section id="services" class="section">
+
+      <div class="heading">
+
+        <p class="eyebrow">
+          CE QUE JE PROPOSE
+        </p>
+
+        <h2>
+          Créer. Structurer.<br>
+          <em>Faire évoluer.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="service-list">
+
+
+        <!-- SERVICE 01 -->
+
+        <div>
+
+          <b>01</b>
+
+          <div>
+
+            <h3>
+              Création de site web
+            </h3>
+
+            <p>
+              One Page, site vitrine ou projet sur-mesure,
+              avec une attention particulière au mobile.
+            </p>
+
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+
+        <!-- SERVICE 02 -->
+
+        <div>
+
+          <b>02</b>
+
+          <div>
+
+            <h3>
+              Refonte de site
+            </h3>
+
+            <p>
+              Moderniser un site existant, améliorer sa navigation
+              et son image.
+            </p>
+
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+
+        <!-- SERVICE 03 -->
+
+        <div>
+
+          <b>03</b>
+
+          <div>
+
+            <h3>
+              Logo & identité visuelle
+            </h3>
+
+            <p>
+              Créer une identité cohérente, reconnaissable
+              et adaptée à votre univers.
+            </p>
+
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+
+        <!-- SERVICE 04 -->
+
+        <div>
+
+          <b>04</b>
+
+          <div>
+
+            <h3>
+              Maintenance & évolution
+            </h3>
+
+            <p>
+              Garder votre site à jour et vous accompagner
+              dans ses évolutions.
+            </p>
+
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="price">
+
+        <strong>
+          À partir de 299 €
+        </strong>
+
+        <span>
+          Tarifs adaptés au projet
+        </span>
+
+        <small>
+          et précisés dans un devis personnalisé.
+        </small>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         À PROPOS
+    ========================== -->
+
+    <section id="apropos" class="about">
+
+      <div>
+
+        <p class="eyebrow">
+          L'ESSENCE DE NETYLÂ
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h2>
+          Une présence en ligne<br>
+          <em>qui vous ressemble.</em>
+        </h2>
+
+        <p>
+          NETYLÂ accompagne les entrepreneurs et les petites structures
+          dans la création de leur présence en ligne, avec des solutions
+          web sur-mesure, élégantes et modernes.
+        </p>
+
+        <p>
+          L'objectif : créer un site qui ne soit pas seulement joli,
+          mais compréhensible, accessible et réellement utile
+          à votre activité.
+        </p>
+
+
+        <div class="values">
+
+          <span>Élégant</span>
+          <span>Créatif</span>
+          <span>Moderne</span>
+          <span>Accessible</span>
+          <span>Technique & humain</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROCESSUS
+    ========================== -->
+
+    <section class="section">
+
+      <div class="heading">
+
+        <p class="eyebrow">
+          COMMENT ÇA SE PASSE ?
+        </p>
+
+        <h2>
+          Du premier échange<br>
+          <em>à la mise en ligne.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="steps">
+
+
+        <!-- ÉTAPE 01 -->
+
+        <div>
+
+          <b>01</b>
+
+          <h3>
+            Échanger
+          </h3>
+
+          <p>
+            Comprendre votre activité, vos besoins
+            et votre image.
+          </p>
+
+        </div>
+
+
+        <!-- ÉTAPE 02 -->
+
+        <div>
+
+          <b>02</b>
+
+          <h3>
+            Concevoir
+          </h3>
+
+          <p>
+            Construire une direction visuelle
+            et une structure adaptées.
+          </p>
+
+        </div>
+
+
+        <!-- ÉTAPE 03 -->
+
+        <div>
+
+          <b>03</b>
+
+          <h3>
+            Développer
+          </h3>
+
+          <p>
+            Donner vie au projet avec un site
+            responsive et fonctionnel.
+          </p>
+
+        </div>
+
+
+        <!-- ÉTAPE 04 -->
+
+        <div>
+
+          <b>04</b>
+
+          <h3>
+            Lancer
+          </h3>
+
+          <p>
+            Finaliser, tester et mettre votre présence
+            en ligne.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="contact">
+
+      <p class="eyebrow">
+        UN PROJET EN TÊTE ?
+      </p>
+
+      <h2>
+        Parlons de<br>
+        <em>votre projet.</em>
+      </h2>
+
+      <p>
+        Vous avez une idée, un site à créer ou une présence
+        en ligne à faire évoluer ? Écrivez-moi pour en discuter.
+      </p>
+
+      <a href="mailto:netyla.digitalweb@gmail.com">
+        netyla.digitalweb@gmail.com
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <strong>
+      NET<span>YLÂ</span> · DIGITAL & WEB
+    </strong>
+
+    <span>
+      © NETYLÂ — Tous droits réservés.
+    </span>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    const menuButton = document.querySelector(".menu");
+    const nav = document.querySelector("nav");
+
+    menuButton.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+
+
+    document.querySelectorAll("nav a").forEach(link => {
+
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+      });
+
+    });
+
+  </script>
+
 </body>
 </html>
