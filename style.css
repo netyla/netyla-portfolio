@@ -267,22 +267,9 @@ h2 em{
 
 .satho-preview{
   width:100%;
-  max-width:650px;
-  height:auto;
-  display:block;
-  box-shadow:0 25px 55px #3f3f3f18;
-}
-
-.browser{
-  width:100%;
   max-width:480px;
   height:auto;
   display:block;
-}
-
-.browser:hover{
-  transform:rotate(0deg) translateY(-4px);
-  box-shadow:0 30px 65px #3f3f3f20
 }
 
 .dots{
