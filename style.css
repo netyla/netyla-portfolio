@@ -606,6 +606,10 @@ footer strong span{
     height:70px
   }
 
+  .brand img{
+  width:100px;
+}
+
   .menu{
     display:block
   }
