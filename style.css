@@ -644,10 +644,15 @@ footer strong span{
     padding-block:90px
   }
 
-  .project-mock{
-    padding:25px;
-    min-height:330px
-  }
+ .project-mock{
+  padding:30px 25px;
+  min-height:auto;
+}
+
+.satho-preview{
+  width:100%;
+  max-width:400px;
+}
 
   .project-text{
     padding:45px 30px
