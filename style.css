@@ -44,11 +44,6 @@ header{
   padding:0 5vw
 }
 
-.brand img{
-  width:150px;
-  mix-blend-mode:multiply
-}
-
 nav{
   display:flex;
   gap:32px;
@@ -431,10 +426,6 @@ footer strong span{
   header{height:70px
         }
   
-  .brand img{
-    width:125px
-  }
-  
   .menu{
     display:block
   }
@@ -465,10 +456,6 @@ footer strong span{
     padding-top:70px
   }
   
-  .hero-symbol{
-    display:none
-  }
-  
   .intro{
     grid-template-columns:1fr;
     gap:18px
@@ -489,10 +476,6 @@ footer strong span{
   
   .about{
     gap:20px
-  }
-  
-  .big{
-    font-size:150px
   }
   
   .steps{
