@@ -259,8 +259,9 @@ h2 em{
 
 .project-mock{
   padding:55px;
-  display:grid;
-  place-items:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   min-height:520px
 }
 
@@ -274,11 +275,9 @@ h2 em{
 
 .browser{
   width:100%;
-  max-width:610px;
-  background:#fff;
-  box-shadow:0 25px 55px #3f3f3f18;
-  transform:rotate(-2deg);
-  transition:transform .35s ease, box-shadow .35s ease
+  max-width:480px;
+  height:auto;
+  display:block;
 }
 
 .browser:hover{
