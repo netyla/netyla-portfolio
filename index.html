@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NETYLÂ — Création de sites web</title>
+    <title>NETYLÂ — Digital & Web</title>
 
-    <meta name="description" content="NETYLÂ — Création de sites web modernes, personnalisés et responsive pour indépendants, artisans et petites entreprises.">
+    <meta name="description"
+          content="NETYLÂ — Création de sites web modernes, personnalisés et responsive pour indépendants, artisans et petites entreprises.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,15 +18,20 @@
 
 <header class="header">
 
-    <a href="#accueil" class="logo">
-        <img src="logo.jpg" alt="NETYLÂ Digital & Web">
+    <a href="#accueil" class="logo-text">
+        <span>NET</span><b>YLÂ</b>
     </a>
 
-    <button class="menu-toggle" aria-label="Ouvrir le menu">
-        ☰
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
     </button>
 
-    <nav class="nav">
+    <nav class="nav" id="navMenu">
         <a href="#accueil">Accueil</a>
         <a href="#realisations">Réalisations</a>
         <a href="#services">Services</a>
@@ -38,7 +44,7 @@
 
 <main>
 
-<!-- ================= HERO ================= -->
+<!-- ================= ACCUEIL ================= -->
 
 <section class="hero" id="accueil">
 
@@ -47,53 +53,45 @@
         <p class="eyebrow">NETYLÂ · DIGITAL & WEB</p>
 
         <h1>
-            Création de sites web
-            <span>pensés pour votre activité.</span>
+            Votre présence en ligne,
+            <span>pensée autrement.</span>
         </h1>
 
         <p class="hero-text">
-            Des sites modernes, personnalisés et responsive pour aider
-            les indépendants, artisans et petites entreprises à développer
-            leur présence en ligne.
+            Je crée des sites web modernes, personnalisés et responsive
+            pour donner à votre activité une présence en ligne
+            professionnelle et à votre image.
         </p>
 
         <div class="hero-buttons">
+
             <a href="#realisations" class="btn btn-primary">
                 Voir mes réalisations
             </a>
 
-            <a href="#contact" class="btn btn-secondary">
-                Demander un devis →
+            <a href="#contact" class="btn btn-outline">
+                Parlons de votre projet →
             </a>
+
         </div>
 
     </div>
 
-    <div class="hero-features">
 
-        <div class="hero-feature">
-            <span>01</span>
-            <div>
-                <strong>Création</strong>
-                <p>Des sites à votre image</p>
-            </div>
+    <div class="hero-visual">
+
+        <div class="visual-main">
+            <span class="visual-net">NET</span><span class="visual-yla">YLÂ</span>
         </div>
 
-        <div class="hero-feature">
-            <span>02</span>
-            <div>
-                <strong>Personnalisation</strong>
-                <p>Un projet pensé pour vous</p>
-            </div>
-        </div>
+        <div class="visual-line"></div>
 
-        <div class="hero-feature">
-            <span>03</span>
-            <div>
-                <strong>Accompagnement</strong>
-                <p>Un site qui évolue avec vous</p>
-            </div>
-        </div>
+        <p>
+            CRÉONS ENSEMBLE<br>
+            VOTRE PRÉSENCE EN LIGNE
+        </p>
+
+        <div class="visual-number">01</div>
 
     </div>
 
@@ -102,7 +100,7 @@
 
 <!-- ================= REALISATION ================= -->
 
-<section class="section project-section" id="realisations">
+<section class="section" id="realisations">
 
     <div class="section-heading">
 
@@ -114,8 +112,8 @@
         </h2>
 
         <p>
-            Chaque site est conçu pour répondre aux besoins réels
-            de l’activité qu’il représente.
+            Un exemple de projet réalisé pour répondre aux besoins
+            réels d'une entreprise.
         </p>
 
     </div>
@@ -130,10 +128,6 @@
                 alt="Aperçu du site Satho Entretien"
             >
 
-            <div class="project-image-label">
-                SITE VITRINE
-            </div>
-
         </div>
 
 
@@ -144,8 +138,8 @@
             <h3>Satho Entretien</h3>
 
             <p class="project-description">
-                Création d’un site web complet pour une entreprise
-                spécialisée dans l’entretien, la réparation et la
+                Création d'un site web complet pour une entreprise
+                spécialisée dans l'entretien, la réparation et la
                 location de matériel de motoculture.
             </p>
 
@@ -161,10 +155,10 @@
                 <div>
                     <span>01</span>
                     <div>
-                        <h4>Présenter l’activité</h4>
+                        <h4>Présenter l'activité</h4>
                         <p>
                             Services, prestations, localisation et
-                            informations essentielles accessibles rapidement.
+                            informations essentielles.
                         </p>
                     </div>
                 </div>
@@ -174,8 +168,8 @@
                     <div>
                         <h4>Mettre les réalisations en valeur</h4>
                         <p>
-                            Une galerie permettant de présenter concrètement
-                            le travail réalisé par l’entreprise.
+                            Une galerie permettant de présenter
+                            le travail réalisé.
                         </p>
                     </div>
                 </div>
@@ -185,19 +179,8 @@
                     <div>
                         <h4>Faciliter la gestion</h4>
                         <p>
-                            Un espace permettant de gérer les annonces
-                            et le matériel proposé à la vente.
-                        </p>
-                    </div>
-                </div>
-
-                <div>
-                    <span>04</span>
-                    <div>
-                        <h4>Penser mobile</h4>
-                        <p>
-                            Une interface adaptée aux téléphones,
-                            tablettes et ordinateurs.
+                            Gestion des annonces et du matériel
+                            proposé à la vente.
                         </p>
                     </div>
                 </div>
@@ -207,8 +190,7 @@
             <a
                 href="https://netyla.github.io/Satho-entretien/"
                 target="_blank"
-                class="project-link"
-            >
+                class="project-link">
                 Voir le site →
             </a>
 
@@ -221,7 +203,7 @@
 
 <!-- ================= SERVICES ================= -->
 
-<section class="section services-section" id="services">
+<section class="section section-light" id="services">
 
     <div class="section-heading">
 
@@ -233,8 +215,8 @@
         </h2>
 
         <p>
-            De la création complète à l’évolution d’un site existant,
-            je vous accompagne selon votre projet.
+            De la création complète à l'évolution d'un site existant,
+            chaque projet est pensé selon votre activité.
         </p>
 
     </div>
@@ -249,8 +231,8 @@
             <h3>Création de site web</h3>
 
             <p>
-                One Page, site vitrine ou projet personnalisé.
-                Un site moderne, responsive et adapté à votre activité.
+                Site vitrine, One Page ou projet personnalisé,
+                avec un design adapté à votre activité.
             </p>
 
             <span class="service-arrow">↗</span>
@@ -265,8 +247,8 @@
             <h3>Refonte de site</h3>
 
             <p>
-                Moderniser un site existant, améliorer son design,
-                sa navigation et son adaptation aux mobiles.
+                Moderniser un site existant, améliorer son design
+                et son expérience sur mobile.
             </p>
 
             <span class="service-arrow">↗</span>
@@ -282,7 +264,7 @@
 
             <p>
                 Logo, couleurs et éléments graphiques pour créer
-                une image cohérente et reconnaissable.
+                une identité cohérente.
             </p>
 
             <span class="service-arrow">↗</span>
@@ -317,7 +299,7 @@
             <strong>299 €</strong>
 
             <p>
-                Site One Page · Design personnalisé · Version mobile · Mise en ligne
+                Site One Page · Design personnalisé · Version mobile
             </p>
 
         </div>
@@ -333,7 +315,7 @@
 
 <!-- ================= POURQUOI ================= -->
 
-<section class="section why-section">
+<section class="section" id="pourquoi">
 
     <div class="section-heading">
 
@@ -353,8 +335,8 @@
             <span>01</span>
             <h3>Personnalisé</h3>
             <p>
-                Pas de site générique copié-collé. Votre site est construit
-                autour de votre activité, votre image et vos besoins.
+                Votre site est construit autour de votre activité,
+                votre image et vos besoins.
             </p>
         </div>
 
@@ -362,8 +344,8 @@
             <span>02</span>
             <h3>Pensé pour le mobile</h3>
             <p>
-                Votre site doit être agréable à consulter sur téléphone
-                comme sur ordinateur.
+                Une expérience agréable sur smartphone,
+                tablette et ordinateur.
             </p>
         </div>
 
@@ -371,9 +353,8 @@
             <span>03</span>
             <h3>Simple & efficace</h3>
             <p>
-                Un design soigné, mais surtout une navigation claire
-                pour permettre à vos visiteurs de trouver rapidement
-                ce qu’ils cherchent.
+                Une navigation claire pour permettre à vos visiteurs
+                de trouver rapidement l'information.
             </p>
         </div>
 
@@ -381,8 +362,8 @@
             <span>04</span>
             <h3>À taille humaine</h3>
             <p>
-                Un accompagnement direct et des échanges simples,
-                sans passer par une grosse agence.
+                Des échanges simples et un accompagnement
+                directement avec la personne qui réalise votre projet.
             </p>
         </div>
 
@@ -395,31 +376,35 @@
 
 <section class="section about-section" id="apropos">
 
-    <div class="about-symbol">✦</div>
+    <div class="about-symbol">
+        ✦
+    </div>
 
     <div class="about-content">
 
         <p class="eyebrow">À PROPOS</p>
 
         <h2>
-            Derrière NETYLÂ,
-            <span>il y a une personne.</span>
+            Une approche
+            <span>simple et personnalisée.</span>
         </h2>
 
-        <p class="about-intro">
-            Je suis Laylâ, créatrice de NETYLÂ.
+        <p>
+            NETYLÂ accompagne les indépendants, artisans et petites
+            entreprises dans la création ou l'évolution de leur
+            présence en ligne.
         </p>
 
         <p>
-            Je crée des sites web modernes et personnalisés pour les
-            indépendants, artisans et petites entreprises qui souhaitent
-            présenter leur activité de manière professionnelle sur internet.
+            Chaque projet est pensé pour être esthétique, clair,
+            responsive et surtout adapté aux besoins réels de votre
+            activité.
         </p>
 
         <p>
-            Mon objectif est simple : créer un site qui soit à la fois
-            esthétique, clair, facile à utiliser et réellement utile
-            à votre activité.
+            L'objectif : créer un site qui vous ressemble et qui
+            permet à vos clients de comprendre rapidement ce que
+            vous proposez.
         </p>
 
         <div class="about-values">
@@ -437,7 +422,7 @@
 
 <!-- ================= PROCESS ================= -->
 
-<section class="section process-section">
+<section class="section section-light">
 
     <div class="section-heading">
 
@@ -465,7 +450,7 @@
             <span>02</span>
             <h3>Concevoir</h3>
             <p>
-                Définir la structure, l’univers visuel et les contenus.
+                Définir la structure et l'univers visuel du projet.
             </p>
         </div>
 
@@ -473,7 +458,7 @@
             <span>03</span>
             <h3>Développer</h3>
             <p>
-                Donner vie au projet avec un site responsive et fonctionnel.
+                Donner vie au projet avec un site responsive.
             </p>
         </div>
 
@@ -481,8 +466,7 @@
             <span>04</span>
             <h3>Ajuster</h3>
             <p>
-                Effectuer les dernières modifications et vérifier
-                que tout fonctionne correctement.
+                Effectuer les dernières modifications et vérifications.
             </p>
         </div>
 
@@ -501,7 +485,7 @@
 
 <!-- ================= FAQ ================= -->
 
-<section class="section faq-section">
+<section class="section">
 
     <div class="section-heading">
 
@@ -520,43 +504,33 @@
         <details>
             <summary>Combien coûte un site ?</summary>
             <p>
-                Les projets commencent à partir de 299 € pour une création
-                One Page. Le tarif final dépend du contenu et des
-                fonctionnalités nécessaires.
+                Les projets commencent à partir de 299 € pour une
+                création One Page. Le tarif final dépend du contenu
+                et des fonctionnalités souhaitées.
             </p>
         </details>
 
         <details>
             <summary>Combien de temps faut-il pour créer un site ?</summary>
             <p>
-                Le délai dépend du projet, du nombre de pages et des
-                fonctionnalités souhaitées. Un délai estimatif est défini
-                avant le début du projet.
+                Le délai dépend du projet, du nombre de pages et
+                des fonctionnalités nécessaires.
             </p>
         </details>
 
         <details>
             <summary>Les sites sont-ils adaptés aux téléphones ?</summary>
             <p>
-                Oui. Les sites sont conçus pour s’adapter aux smartphones,
-                tablettes et ordinateurs.
+                Oui. Les sites sont conçus pour s'adapter aux
+                smartphones, tablettes et ordinateurs.
             </p>
         </details>
 
         <details>
-            <summary>Pouvez-vous vous occuper de la mise en ligne ?</summary>
+            <summary>Est-il possible de faire évoluer le site ?</summary>
             <p>
-                Oui. Je peux m’occuper de la mise en ligne et vous
-                accompagner dans les différentes étapes du projet.
-            </p>
-        </details>
-
-        <details>
-            <summary>Est-il possible de faire évoluer le site plus tard ?</summary>
-            <p>
-                Oui. Une fois le site en ligne, il est possible d’ajouter
-                de nouvelles pages, fonctionnalités ou contenus selon
-                l’évolution de votre activité.
+                Oui. De nouvelles pages, fonctionnalités ou contenus
+                peuvent être ajoutés par la suite.
             </p>
         </details>
 
@@ -579,15 +553,13 @@
         </h2>
 
         <p>
-            Vous avez une idée, un site à créer ou une présence en ligne
-            à faire évoluer ? Écrivez-moi pour me présenter votre projet
-            et recevoir un premier échange.
+            Une idée, un site à créer ou une présence en ligne
+            à améliorer ? Parlons de votre projet.
         </p>
 
         <a
             href="mailto:contact@netyla.fr"
-            class="btn btn-light"
-        >
+            class="btn btn-contact">
             Me contacter →
         </a>
 
@@ -602,9 +574,10 @@
 
 <footer class="footer">
 
-    <p>
-        NETYLÂ · DIGITAL & WEB
-    </p>
+    <div class="footer-brand">
+        <span>NET</span><b>YLÂ</b>
+        <small>• DIGITAL & WEB</small>
+    </div>
 
     <p>
         © NETYLÂ — Tous droits réservés.
@@ -613,7 +586,32 @@
 </footer>
 
 
-<script src="script.js"></script>
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", function () {
+
+    navMenu.classList.toggle("active");
+
+    const isOpen = navMenu.classList.contains("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+});
+
+
+document.querySelectorAll(".nav a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navMenu.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+
+    });
+
+});
+</script>
 
 </body>
 </html>
