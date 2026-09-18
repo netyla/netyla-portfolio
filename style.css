@@ -590,26 +590,31 @@ h1, h2, h3, h4 {
 .intro-screen {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--paper);
-  animation: introFadeOut 0.6s ease forwards;
-  animation-delay: 1.5s;
+  opacity: 1;
+  visibility: visible;
+  animation: introFadeOut 0.7s ease forwards;
+  animation-delay: 1.8s;
 }
 
 .intro-screen img {
-  width: 180px;
+  width: 280px;
+  max-width: 65vw;
   height: auto;
-  animation: logoIntro 0.8s ease;
+  display: block;
+  animation: logoIntro 0.8s ease forwards;
 }
 
 @keyframes logoIntro {
   from {
     opacity: 0;
-    transform: scale(0.92);
+    transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -621,5 +626,13 @@ h1, h2, h3, h4 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+}
+
+/* Téléphone */
+@media (max-width: 720px) {
+  .intro-screen img {
+    width: 240px;
+    max-width: 70vw;
   }
 }
