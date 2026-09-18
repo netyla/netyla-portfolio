@@ -591,21 +591,25 @@ h1, h2, h3, h4 {
   position: fixed;
   inset: 0;
   z-index: 99999;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--paper);
-  opacity: 1;
-  visibility: visible;
+
+  /* Rose du logo NETYLÂ */
+  background: #E18EA1;
+
   animation: introFadeOut 0.7s ease forwards;
   animation-delay: 1.8s;
 }
 
 .intro-screen img {
-  width: 420px;
+  width: 500px;
   max-width: 80vw;
   height: auto;
   display: block;
+
+  animation: logoIntro 0.8s ease forwards;
 }
 
 @keyframes logoIntro {
@@ -631,8 +635,7 @@ h1, h2, h3, h4 {
 /* Téléphone */
 @media (max-width: 720px) {
   .intro-screen img {
-    width: 360px;
-    max-width: 85vw;
+    width: 400px;
+    max-width: 88vw;
   }
-}
 }
