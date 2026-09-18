@@ -602,11 +602,10 @@ h1, h2, h3, h4 {
 }
 
 .intro-screen img {
-  width: 280px;
-  max-width: 65vw;
+  width: 420px;
+  max-width: 80vw;
   height: auto;
   display: block;
-  animation: logoIntro 0.8s ease forwards;
 }
 
 @keyframes logoIntro {
@@ -632,7 +631,8 @@ h1, h2, h3, h4 {
 /* Téléphone */
 @media (max-width: 720px) {
   .intro-screen img {
-    width: 240px;
-    max-width: 70vw;
+    width: 360px;
+    max-width: 85vw;
   }
+}
 }
