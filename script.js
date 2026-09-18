@@ -24,3 +24,12 @@ function updateHeaderState() {
 
 updateHeaderState();
 window.addEventListener("scroll", updateHeaderState, { passive: true });
+
+// ================= INTRO LOGO =================
+const introScreen = document.getElementById("introScreen");
+
+if (introScreen) {
+  setTimeout(() => {
+    introScreen.remove();
+  }, 2600);
+}
