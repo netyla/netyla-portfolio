@@ -88,18 +88,16 @@ button {
 
 /* LOGO */
 
-.logo-text {
-    font-size: 25px;
-    font-weight: 900;
-    letter-spacing: -0.07em;
+.logo {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
 }
 
-.logo-text span {
-    color: #111;
-}
-
-.logo-text b {
-    color: var(--pink);
+.logo img {
+   width: 130px;
+   height: auto;
+   display: block;
 }
 
 
@@ -1049,9 +1047,17 @@ button {
         padding: 0 18px;
     }
 
-    .logo-text {
-        font-size: 22px;
+    .logo {
+       display: flex;
+       align-items: center;
+       text-decoration: none;
     }
+
+   .logo img {
+      width: 130px;
+      height: auto;
+      display: block;
+   }
 
     .menu-toggle {
         display: block;
