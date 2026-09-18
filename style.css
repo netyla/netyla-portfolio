@@ -526,15 +526,28 @@ h1, h2, h3, h4 {
 .footer-brand {
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 0;
   font-family: var(--font-head);
   font-size: 18px;
   font-weight: 700;
+  letter-spacing: -0.04em;
 }
 
-.footer-brand span { color: var(--ink); }
-.footer-brand b { color: var(--rose); }
-.footer-brand small { color: var(--stone-light); font-size: 11px; font-weight: 400; }
+.footer-brand span {
+  color: var(--ink);
+}
+
+.footer-brand b {
+  color: var(--rose);
+}
+
+.footer-brand small {
+  margin-left: 8px;
+  color: var(--stone-light);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
 
 @media (max-width: 900px) {
   .services-list, .why-grid { grid-template-columns: 1fr; }
