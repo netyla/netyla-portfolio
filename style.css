@@ -663,3 +663,19 @@ h1, h2, h3, h4 {
     white-space: normal;
   }
 }
+@media (max-width: 600px) {
+  .project-image {
+    min-height: 0;
+    height: auto;
+    padding: 12px;
+  }
+
+  .project-image img {
+    max-height: 260px;
+  }
+
+  .project-content {
+    padding: 24px 22px;
+    justify-content: flex-start;
+  }
+}
