@@ -918,3 +918,58 @@ h4 {
     padding-top: 24px;
   }
 }
+
+/* ==================================================
+   ANIMATIONS AU SCROLL — NETYLÂ
+   ================================================== */
+
+/* État initial : invisible uniquement si JavaScript
+   a confirmé que les animations sont disponibles */
+
+.js-animations .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Apparition */
+
+.js-animations .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Décalage des cartes */
+
+@media (min-width: 721px) {
+
+  .js-animations .service-card.reveal:nth-child(2),
+  .js-animations .why-card.reveal:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+
+  .js-animations .service-card.reveal:nth-child(3),
+  .js-animations .why-card.reveal:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+
+  .js-animations .service-card.reveal:nth-child(4),
+  .js-animations .why-card.reveal:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+}
+
+/* Accessibilité : réduire les animations
+   si l'utilisateur le souhaite */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .js-animations .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+}
