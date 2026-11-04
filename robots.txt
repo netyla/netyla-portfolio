@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://netyla.github.io/netyla-portfolio/sitemap.xml
+En
