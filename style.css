@@ -135,7 +135,8 @@ h1, h2, h3, h4 {
 }
 
 .section-heading h2 {
-  white-space: nowrap;
+  white-space: normal;
+   text-wrap: balance
   margin-bottom: 16px;
   font-size: clamp(32px, 4vw, 46px);
   line-height: 1.08;
