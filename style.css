@@ -561,6 +561,18 @@ h1, h2, h3, h4 {
   .project-card { grid-template-columns: 1fr; }
   .about-content { max-width: 100%; }
   .hero-facts { grid-template-columns: 1fr; gap: 16px; }
+   
+   .project-image {
+      min-height: auto;
+      padding: 20px;
+   }
+   .project-image img {
+      max-height: 360px;
+   }
+   .projet-content {
+      padding: 36px 28px;
+   }
+      
 }
 
 @media (max-width: 720px) {
