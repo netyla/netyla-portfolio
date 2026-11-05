@@ -998,3 +998,175 @@ h4 {
   }
 
 }
+
+/* ==================================================
+   NETYLÂ — FORMULAIRE DE CONTACT
+   ================================================== */
+
+.contact-form {
+  max-width: 620px;
+  margin: 38px auto 0;
+  text-align: left;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  color: #f5f1ed;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 15px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  outline: none;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #b9b4aa;
+  opacity: 1;
+}
+
+.contact-form input:hover,
+.contact-form select:hover,
+.contact-form textarea:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #ed9aba;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(237, 154, 186, 0.13);
+}
+
+.contact-form select {
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.contact-form select:invalid {
+  color: #b9b4aa;
+}
+
+.contact-form select option {
+  background: #201d18;
+  color: white;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form .form-privacy {
+  margin: 0 0 24px;
+  color: #c9c4bb;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.form-submit {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.form-submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.contact-form .form-status {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+/* Champ antispam masqué */
+
+.form-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Adaptation téléphone */
+
+@media (max-width: 600px) {
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-section {
+    padding: 55px 6%;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+}
+
+/* Respect des préférences d'accessibilité */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    transition: none;
+  }
+
+}
