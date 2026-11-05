@@ -1255,8 +1255,3 @@ h4 {
   font-weight: 500;
 }
 
-/* Contraste des messages après envoi */
-
-.contact-form .form-status[style*="color"] {
-  color: #276749;
-}
