@@ -107,3 +107,66 @@ if (entry.isIntersecting) {
   });
 
 })();
+
+/* ==================================================
+   NETYLÂ — ENVOI DU FORMULAIRE DE CONTACT
+   ================================================== */
+
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm && formStatus) {
+
+  contactForm.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+    const submitButton = contactForm.querySelector(
+      'button[type="submit"]'
+    );
+
+    const originalText = submitButton.textContent;
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Envoi en cours...";
+    formStatus.textContent = "";
+
+    try {
+
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error("Échec de l'envoi");
+      }
+
+      // Confirmation uniquement après réponse positive
+      formStatus.textContent =
+        "Merci ! Votre demande a bien été envoyée. Je vous répondrai dès que possible.";
+
+      formStatus.style.color = "#b9e5c5";
+
+      contactForm.reset();
+
+    } catch (error) {
+
+      formStatus.textContent =
+        "Votre demande n'a pas pu être envoyée. Veuillez réessayer ou me contacter à netyla.digitalweb@gmail.com.";
+
+      formStatus.style.color = "#ffb4b4";
+
+    } finally {
+
+      submitButton.disabled = false;
+      submitButton.textContent = originalText;
+
+    }
+
+  });
+
+}
