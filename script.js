@@ -149,7 +149,7 @@ if (contactForm && formStatus) {
       formStatus.textContent =
         "Merci ! Votre demande a bien été envoyée. Je vous répondrai dès que possible.";
 
-      formStatus.style.color = "#b9e5c5";
+      formStatus.style.color = "#276749";
 
       contactForm.reset();
 
@@ -158,7 +158,7 @@ if (contactForm && formStatus) {
       formStatus.textContent =
         "Votre demande n'a pas pu être envoyée. Veuillez réessayer ou me contacter à netyla.digitalweb@gmail.com.";
 
-      formStatus.style.color = "#ffb4b4";
+      formStatus.style.color = "#a12638";
 
     } finally {
 
