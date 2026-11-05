@@ -934,6 +934,29 @@ h4 {
     transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+
+/* ==================================================
+   NETYLÂ — ANIMATIONS PLUS DOUCES SUR MOBILE
+   ================================================== */
+
+@media (max-width: 600px) {
+
+  .js-animations .reveal {
+    transform: translateY(12px);
+
+    transition:
+      opacity 0.5s ease,
+      transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .js-animations .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
 /* Apparition */
 
 .js-animations .reveal.is-visible {
@@ -1262,6 +1285,35 @@ h4 {
 
   #realisations .section-heading {
     margin-bottom: 30px;
+  }
+
+}
+
+/* ==================================================
+   NETYLÂ — FINITIONS ESPACEMENTS MOBILE
+   ================================================== */
+
+@media (max-width: 600px) {
+
+  /* Sections légèrement plus rapprochées */
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /* Titres plus proches de leur contenu */
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  /* Réalisation Satho Entretien */
+  #realisations .section-heading {
+    margin-bottom: 24px;
+  }
+
+  /* Dernier espace avant le portfolio */
+  .hero {
+    padding-bottom: 25px;
   }
 
 }
