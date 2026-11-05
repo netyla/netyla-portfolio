@@ -483,28 +483,154 @@
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
-    <section class="contact-section" id="contact">
+    
+<!-- ================= CONTACT ================= -->
+<section class="contact-section" id="contact">
 
-      <div class="contact-inner">
+  <div class="contact-inner">
 
-        <h2>Créons ensemble votre présence en ligne</h2>
+    <h2>Créons ensemble votre présence en ligne</h2>
 
-        <p>
-          Artisan, indépendant, commerçant, association ou entreprise :
-          parlons de votre projet, petit ou grand, et imaginons
-          ensemble une solution adaptée à vos besoins et à votre budget.
-        </p>
+    <p>
+      Artisan, indépendant, commerçant, association ou entreprise :
+      parlons de votre projet, petit ou grand, et imaginons
+      ensemble une solution adaptée à vos besoins et à votre budget.
+    </p>
 
-        <a
-          href="mailto:netyla.digitalweb@gmail.com?subject=Demande%20de%20renseignement%20-%20NETYL%C3%82"
-          class="btn btn-contact"
-        >
-          Me contacter
-        </a>
+    <form
+      class="contact-form"
+      id="contactForm"
+      action="https://formspree.io/f/mnpprzaa"
+      method="POST"
+    >
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="clientName">Votre nom *</label>
+          <input
+            type="text"
+            id="clientName"
+            name="nom"
+            placeholder="Votre nom ou entreprise"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="clientEmail">Votre email *</label>
+          <input
+            type="email"
+            id="clientEmail"
+            name="email"
+            placeholder="bonjour@entreprise.fr"
+            autocomplete="email"
+            required
+          >
+        </div>
 
       </div>
-    </section>
+
+      <div class="form-group">
+        <label for="projectType">Votre projet *</label>
+        <select
+          id="projectType"
+          name="type_de_projet"
+          required
+        >
+          <option value="" disabled selected>
+            Sélectionnez votre projet
+          </option>
+          <option value="Site vitrine">
+            Création d'un site vitrine
+          </option>
+          <option value="Refonte">
+            Refonte d'un site existant
+          </option>
+          <option value="Identité visuelle">
+            Logo et identité visuelle
+          </option>
+          <option value="Autre">
+            Autre demande
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="projectBudget">
+          Votre budget approximatif
+        </label>
+        <select
+          id="projectBudget"
+          name="budget"
+        >
+          <option value="" disabled selected>
+            Sélectionnez votre budget
+          </option>
+          <option value="300 à 500 €">300 à 500 €</option>
+          <option value="500 à 1 000 €">500 à 1 000 €</option>
+          <option value="Plus de 1 000 €">
+            Plus de 1 000 €
+          </option>
+          <option value="À définir">
+            Je ne sais pas encore
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="projectMessage">
+          Parlez-moi de votre projet *
+        </label>
+        <textarea
+          id="projectMessage"
+          name="message"
+          rows="5"
+          placeholder="Présentez votre activité, vos idées et vos besoins..."
+          required
+        ></textarea>
+      </div>
+
+      <!-- Champ antispam invisible -->
+      <div class="form-honeypot" aria-hidden="true">
+        <label for="contactWebsite">
+          Laissez ce champ vide
+        </label>
+        <input
+          type="text"
+          id="contactWebsite"
+          name="_gotcha"
+          tabindex="-1"
+          autocomplete="off"
+        >
+      </div>
+
+      <p class="form-privacy">
+        Les informations transmises sont utilisées
+        uniquement pour répondre à votre demande.
+      </p>
+
+      <button
+        type="submit"
+        class="btn btn-contact form-submit"
+      >
+        Envoyer ma demande de devis
+      </button>
+
+      <p
+        class="form-status"
+        id="formStatus"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+    </form>
+
+  </div>
+
+</section>
+
 
   </main>
 
