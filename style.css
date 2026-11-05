@@ -674,8 +674,8 @@ h4 {
   max-width: var(--max);
   margin: 30px auto 100px;
   padding: 80px 7%;
-  background: var(--charcoal);
-  color: white;
+  background: #fbe6ef;
+  color: var(--ink);
   border-radius: 22px;
   text-align: center;
 }
@@ -689,12 +689,12 @@ h4 {
   margin-bottom: 18px;
   font-size: clamp(32px, 5vw, 48px);
   line-height: 1.1;
-  color: white;
+  color: var(--ink);
 }
 
 .contact-section p {
   margin-bottom: 30px;
-  color: #b9b4aa;
+  color: var(--stone);
   font-size: 15px;
 }
 
@@ -1169,4 +1169,94 @@ h4 {
     transition: none;
   }
 
+}
+
+/* ==================================================
+   NETYLÂ — FORMULAIRE ROSE POUDRÉ
+   ================================================== */
+
+/* Titres des champs */
+
+.contact-form .form-group label {
+  color: var(--ink);
+}
+
+/* Champs blancs */
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background: #ffffff;
+  color: var(--ink);
+  border-color: #e5cbd5;
+}
+
+/* Textes indicatifs */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #706b62;
+}
+
+/* Effet au survol */
+
+.contact-form input:hover,
+.contact-form select:hover,
+.contact-form textarea:hover {
+  border-color: var(--rose);
+}
+
+/* Effet lorsqu'on sélectionne un champ */
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  background: #ffffff;
+  border-color: var(--rose);
+  box-shadow: 0 0 0 3px rgba(199, 53, 114, 0.12);
+}
+
+/* Menus déroulants */
+
+.contact-form select {
+  color-scheme: light;
+}
+
+.contact-form select:invalid {
+  color: #706b62;
+}
+
+.contact-form select option {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+/* Confidentialité */
+
+.contact-form .form-privacy {
+  color: var(--stone);
+}
+
+/* Bouton rose */
+
+.contact-form .form-submit {
+  background: var(--rose);
+  color: #ffffff;
+}
+
+.contact-form .form-submit:hover {
+  background: var(--rose-deep);
+  color: #ffffff;
+}
+
+/* Message de confirmation */
+
+.contact-form .form-status {
+  font-weight: 500;
+}
+
+/* Contraste des messages après envoi */
+
+.contact-form .form-status[style*="color"] {
+  color: #276749;
 }
